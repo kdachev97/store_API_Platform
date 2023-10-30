@@ -1,0 +1,16 @@
+App\Entity\Alcohol:
+  alcohol1:
+    name: 'Jameson'
+    type: 'whiskey'
+    description: 'Tennessee whiskey'
+    producer: '@producer1'
+    abv: 37.5
+    image: '@image1'
+
+  alcohol{2..50}:
+    name (unique): '<name()>'
+    type: '<randomElement(["vodka", "beer", "whiskey", "wine", "rum"])>'
+    description: '<sentence()>'
+    producer: '@producer*'
+    abv: '<randomFloat(2, 4, 40)>'
+    image: '@image<current()>'

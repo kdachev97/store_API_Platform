@@ -1,0 +1,8 @@
+App\Entity\Producer:
+  producer1:
+    name: 'Bacardi'
+    country: 'Cuba'
+
+  producer{2..10}:
+    name (unique): '<name()>'
+    country: '<country()>'

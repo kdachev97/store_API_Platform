@@ -1,0 +1,8 @@
+App\Entity\Image:
+  image1:
+    name: 'Jameson'
+    url: 'sameUrl.com'
+
+  image{2..50} (unique):
+    name (unique): '<word()>'
+    url: '<imageUrl()>'

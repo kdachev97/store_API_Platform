@@ -1,0 +1,5 @@
+App\Entity\User:
+  user:
+    email: 'krum@codixis.com'
+    plainPassword: 'aBcd@5678yilnjvgtiuh'
+    roles: ['ROLE_ADMIN']
